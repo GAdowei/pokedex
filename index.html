@@ -4,15 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>API project</title>
-    <script src="api.js" defer></script>
-    <script src="dom.js" defer></script>
+		<script src="api.js" defer></script>
+		<script src="dom.js" defer></script>
+		<script src="viewHandler.js"></script>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="grid.css" />
 	</head>
 
 	<body>
 		<div id="container">
-      <h1>PoKeDex</h1>
-      <div id="pokedex-display"></div>
+			<header>
+				<h1>POKEDEX</h1>
+				<h5>Explore to see more! >>></h5>
+			</header>
+			<main>
+				<div id="pokedex-display"></div>
+			</main>
+			<nav id="nav">
+				<div class="nav-div" id="prev">
+					<button id="previousRow"><p>Previous row</p></button>
+					<button id="previousPage"><p>Previous page</p></button>
+				</div>
+				<div class="nav-div" id="next">
+					<button id="nextRow"><p>Next row</p></button>
+					<button id="nextPage"><p>Next page</p></button>
+				</div>
+			</nav>
+			<footer>
+				<h6>
+					API: <a href="https://pokeapi.co/">PokeAPI</a> Developer:
+					<a href="https://github.com/GmanMcman/">GmanMcman</a>
+				</h6>
+			</footer>
 		</div>
 	</body>
 </html>
