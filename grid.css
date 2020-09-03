@@ -1,0 +1,75 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 10% 85% 5%;
+}
+
+header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+}
+
+#nav {
+    width: 100%;
+    top: 40vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pokedex-display {
+    position: relative;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 15px;
+    margin: 15px auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #7fffd4;
+    padding: 20px;
+    z-index: 1;
+}
+
+.nav-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 150px;
+    margin: 0 180px;
+}
+
+.nav-div button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-div button:active {
+    transform: scale(0.8);
+    
+}
+
+footer {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
