@@ -17,7 +17,7 @@ const viewHandler = () => {
 			offset -= 5;
 			getContent();
 		} else {
-			alert("No previous pokemon!");
+			alert("No previous Pokémon!");
 		}
 	});
 
@@ -34,7 +34,7 @@ const viewHandler = () => {
 			offset -= offset;
 			getContent();
 		} else {
-			alert("No previous pokemon!");
+			alert("No previous Pokémon!");
 		}
 	});
 
@@ -53,7 +53,6 @@ const viewHandler = () => {
 				const p = document.querySelector(`#p-div-${i + 1}`).firstChild;
 				// Set contents
 				img.src = pokeUrl.sprites.front_default;
-				// Click functionality
 				// Click functionality
 				img.addEventListener("mouseenter", () => {
 					img.src = pokeUrl.sprites.back_default;
