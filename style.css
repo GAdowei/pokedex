@@ -4,9 +4,25 @@
 	box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 0;
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    color: red;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Architects Daughter', cursive;
+    color: #000;
+    letter-spacing: 1.5px;
+    margin-top:-10px;
+}
+
+footer p {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -50px;
 }
 
 .poke-div {
@@ -43,6 +59,8 @@ body {
 
 .p-div p {
     font-size: 12px;
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 1px;
     font-weight: bold;
     text-align: center;
     padding-top: 2px;
