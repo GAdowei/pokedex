@@ -9,32 +9,44 @@
 		<script src="viewHandler.js"></script>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="grid.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Da+2">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 	</head>
 
 	<body>
 		<div id="container">
 			<header>
-				<h1>POKEDEX</h1>
-				<h5>Explore to see more! >>></h5>
+				<h1>POkEdEX aPP</h1>
+				<h5>Hover over Pokémon for rear view!</h5>
 			</header>
 			<main>
 				<div id="pokedex-display"></div>
 			</main>
 			<nav id="nav">
 				<div class="nav-div" id="prev">
-					<button id="previousRow"><p>Previous row</p></button>
-					<button id="previousPage"><p>Previous page</p></button>
+					<button id="previousRow" title="Previous row">
+						<i class="fa fa-step-backward" aria-hidden="true"></i>
+						<p>prev row</p>
+					</button>
+					<button id="previousPage" title="Previous row">
+						<i class="fa fa-fast-backward" aria-hidden="true"></i>
+						<p>prev page</p>
+					</button>
 				</div>
 				<div class="nav-div" id="next">
-					<button id="nextRow"><p>Next row</p></button>
-					<button id="nextPage"><p>Next page</p></button>
+					<button id="nextRow" title="Next row"><i class="fa fa-step-forward" aria-hidden="true"></i>
+						<p>next row</p></button>
+					<button id="nextPage" title="Next page"><i class="fa fa-fast-forward" aria-hidden="true"></i><p>next page</p></button>
 				</div>
 			</nav>
 			<footer>
-				<h6>
-					API: <a href="https://pokeapi.co/">PokeAPI</a> Developer:
-					<a href="https://github.com/GmanMcman/">GmanMcman</a>
-				</h6>
+				<p>
+					API: <a href="https://pokeapi.co/" target="_blank">PokeAPI</a> Developer:
+					<a href="https://github.com/GmanMcman" target="_blank">GmanMcman</a>
+				</p>
 			</footer>
 		</div>
 	</body>
